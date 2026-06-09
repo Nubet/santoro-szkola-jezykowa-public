@@ -18,6 +18,10 @@
 # Local environment
 .env*
 
+# Testing
+.playwright-test
+.playwright-mcp
+
 # Logs and caches
 *.log
 npm-debug.log*
