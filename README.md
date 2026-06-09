@@ -18,6 +18,12 @@ Odświeżona strona porządkuje najważniejsze informacje o ofercie i prowadzi u
 
 Strona jest prostsza do zrozumienia, bardziej przekonująca wizualnie i łatwiejsza w odbiorze. Lepiej prezentuje ofertę szkoły i ułatwia szybkie przejście do kontaktu.
 
+## Podgląd strony
+
+https://santoro-szkola-jezykowa-public.vercel.app/
+
+<img src="./public/preview.png" alt="Podglad strony Santoro" width="100%" />
+
 ## Uruchomienie lokalne
 
 ```bash
