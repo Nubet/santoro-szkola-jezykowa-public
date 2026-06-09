@@ -17,6 +17,7 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: "Santoro - Szkoła Języków Obcych | Łódź",
   description: "Kameralna szkoła językowa w sercu Łodzi. Angielski, hiszpański i włoski dla dzieci, młodzieży i dorosłych.",
+  authors: [{ name: "Norbert Fila", url: "https://norbertfila.com" }],
   openGraph: {
     title: "Santoro - Szkoła Języków Obcych | Łódź",
     description: "Kameralna szkoła językowa w sercu Łodzi. Angielski, hiszpański i włoski dla dzieci, młodzieży i dorosłych.",

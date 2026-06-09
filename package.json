@@ -1,7 +1,13 @@
 {
   "name": "santoro-szkola-jezykowa",
   "version": "0.1.0",
+  "description": "Strona internetowa Santoro Szkoły Języków Obcych zbudowana w Next.js.",
   "private": true,
+  "author": {
+    "name": "Norbert Fila",
+    "url": "https://norbertfila.com"
+  },
+  "homepage": "https://norbertfila.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
