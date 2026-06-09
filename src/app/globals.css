@@ -33,3 +33,99 @@ body {
   background-image: radial-gradient(var(--color-surface-alt) 2px, transparent 2px);
   background-size: 32px 32px;
 }
+
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-float-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0) rotate(var(--hero-rotate-from, 0deg));
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(var(--hero-rotate-to, 0deg));
+  }
+}
+
+@keyframes hero-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9) rotate(-6deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(6deg);
+  }
+}
+
+.hero-fade-up,
+.hero-float-in,
+.hero-scale-in {
+  animation-duration: 700ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero-fade-up {
+  animation-name: hero-fade-up;
+}
+
+.hero-float-in {
+  animation-name: hero-float-in;
+}
+
+.hero-scale-in {
+  animation-name: hero-scale-in;
+}
+
+.hero-delay-1 {
+  animation-delay: 120ms;
+}
+
+.hero-delay-2 {
+  animation-delay: 220ms;
+}
+
+.hero-delay-3 {
+  animation-delay: 320ms;
+}
+
+.hero-delay-4 {
+  --hero-rotate-from: 2deg;
+  --hero-rotate-to: 4deg;
+  animation-delay: 420ms;
+}
+
+.hero-delay-5 {
+  --hero-rotate-from: -3deg;
+  --hero-rotate-to: -2deg;
+  animation-delay: 520ms;
+}
+
+.hero-delay-6 {
+  animation-delay: 620ms;
+}
+
+.hero-delay-7 {
+  animation-delay: 720ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-fade-up,
+  .hero-float-in,
+  .hero-scale-in {
+    animation: none;
+  }
+}
